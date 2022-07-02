@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="top">form elements</h1>
+    <fieldset>
+      <legend>FORM REGISTRATION</legend>
+      <p>
+        username
+        <input type="text" name="username" placeholder="username" />
+      </p>
+      <p>
+        password
+        <input type="password" name="password" placeholder="password" />
+      </p>
+      <p>
+        phone number
+        <input type="number" name="phonenumber" placeholder="phone number" />
+      </p>
+    </fieldset>
+    <fieldset>
+      <legend>BASIC KYC</legend>
+      <p>tell us about yourself</p>
+      <textarea name="comments">enter your comments here...</textarea>
+      <p><hr />
+        level of education<br />
+        <input id="tertiary" type="radio" name="education" value="tertiary" />
+        <label for="tertiary">tertiary level</label><br />
+        <input
+          id="secondary"
+          type="radio"
+          name="education"
+          value="secondary"
+          checked="checked"
+        />
+        <label for="secondary">secondary level</label> <br />
+        <input id="primary" type="radio" name="education" value="primary" />
+        <label for="primary">primary level</label> <br />
+        <input type="radio" name="education" value="others" /> others
+      </p><hr />
+      <p>
+        select your choice(s) <br />
+        <input id="green" type="checkbox" name="choice" value="green" />
+        <label for="green">green</label><br />
+        <input id="blue" type="checkbox" name="choice" value="blue" />
+        <label for="blue">blue</label><br />
+        <input id="red" type="checkbox" name="choice" value="red" />
+        <label for="red">red</label><br />
+        <input id="yellow" type="checkbox" name="choice" value="yellow" />
+        <label for="yellow">yellow</label>
+      </p><hr />
+      <p>
+        which country are you from <br />
+        <select name="countries" id="country">
+          <option value="Argentina">Argentina</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Congo">Congo</option>
+          <option value="France">France</option>
+          <option value="Nigeria">Nigeria</option>
+        </select>
+      </p>
+      <p>
+        which instrument do you play? (you can select more than one option by
+        holding the shift button)<br />
+        <select name="instrument" multiple="multiple">
+          <option value="trumpet">trumpet</option>
+          <option value="saxophone">saxophone</option>
+          <option value="drums">drums</option>
+          <option value="keyboard">keyboard</option>
+          <option value="clarinet">clarinet</option>
+          <option value="guitar">guitar</option>
+        </select>
+      </p><hr />
+      <p>
+        attach file (not more than 5mb)<br />
+        <input type="file" name="user-file" /><br />
+        <input type="submit" value="upload" />
+      </p><hr />
+      <p>
+        subscribe to our email
+        <input type="submit" name="subscribe" value="subscribe" />
+      </p>
+      <button>
+        <img
+          src="./IMG-20181012-WA0000.jpg"
+          alt="add"
+          width="50"
+          height="10"
+        />add
+      </button>
+      <input type="hidden" name="bookmark" value="lyrics" />
+    </fieldset>
+    <a href="#top">to top</a>  
+  </body>
+</html>
